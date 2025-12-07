@@ -2,7 +2,7 @@ import axios from 'axios';
 
 // Create axios instance with base configuration
 const api = axios.create({
-  baseURL: '/api',
+  baseURL: 'https://backend-spy8.onrender.com/api',
   headers: {
     'Content-Type': 'application/json',
   },
