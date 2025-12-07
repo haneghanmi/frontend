@@ -1,0 +1,110 @@
+.profile-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding: 40px 20px;
+  position: relative;
+  z-index: 1;
+}
+
+.profile-card {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(20px);
+  border-radius: 30px;
+  padding: 50px 40px;
+  width: 100%;
+  max-width: 700px;
+  box-shadow: 0 20px 60px rgba(255, 182, 193, 0.4);
+  border: 2px solid rgba(255, 255, 255, 0.8);
+}
+
+[data-theme='dark'] .profile-card {
+  background: rgba(30, 30, 50, 0.95);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+  border: 2px solid rgba(100, 149, 237, 0.3);
+}
+
+.profile-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.profile-header h1 {
+  background: linear-gradient(135deg, #ff6b9d 0%, #c44569 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-size: 32px;
+  margin: 0;
+}
+
+.form-section {
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+  border-bottom: 2px solid rgba(255, 182, 193, 0.3);
+}
+
+[data-theme='dark'] .form-section {
+  border-bottom-color: rgba(100, 149, 237, 0.3);
+}
+
+.form-section h2 {
+  color: #8b5a7d;
+  margin-bottom: 20px;
+  font-size: 22px;
+}
+
+[data-theme='dark'] .form-section h2 {
+  color: #b8a9d4;
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.checkbox-label input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.password-section {
+  margin-top: 30px;
+  padding-top: 30px;
+  border-top: 2px solid rgba(255, 182, 193, 0.3);
+}
+
+[data-theme='dark'] .password-section {
+  border-top-color: rgba(100, 149, 237, 0.3);
+}
+
+.password-section h2 {
+  color: #8b5a7d;
+  margin-bottom: 20px;
+  font-size: 22px;
+}
+
+[data-theme='dark'] .password-section h2 {
+  color: #b8a9d4;
+}
+
+.success-message {
+  color: #28a745;
+  background: rgba(40, 167, 69, 0.1);
+  padding: 12px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+[data-theme='dark'] .success-message {
+  color: #90ee90;
+  background: rgba(144, 238, 144, 0.1);
+}
+
